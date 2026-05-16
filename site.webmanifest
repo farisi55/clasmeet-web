@@ -1,0 +1,17 @@
+{
+  "name": "Classmate",
+  "short_name": "Classmate",
+  "description": "Playdate & Workshop Jabodetabek untuk aktivitas anak yang fun, kreatif, dan aman.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2dd4bf",
+  "icons": [
+    {
+      "src": "assets/classmate-logo.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
