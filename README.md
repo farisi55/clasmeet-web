@@ -82,7 +82,7 @@ Nomor placeholder saat ini:
 Ubah di dua tempat:
 
 - `script.js`, pada konstanta `ADMIN_PHONE`.
-- `index.html`, pada link yang memakai `https://wa.me/628992400880`.
+- `index.html`, pada link yang memakai `https://wa.me/628xxxxx`.
 
 Gunakan format internasional tanpa `+`, spasi, atau tanda hubung. Contoh: `6281234567890`.
 
