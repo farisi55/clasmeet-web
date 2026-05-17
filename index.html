@@ -321,32 +321,33 @@
           <p class="section-kicker">Kontak</p>
           <h2>Mau daftar event atau ajak kerja sama?</h2>
           <p>
-            Isi form singkat ini ya, Kak. Setelah klik kirim, pesan akan terbuka di WhatsApp admin
-            supaya bisa langsung lanjut ngobrol.
+            Isi form singkat ini ya, Kak. Data akan masuk ke admin Classmate dulu,
+            lalu Kakak bisa lanjut chat WhatsApp kalau ingin respon lebih cepat.
           </p>
           <div class="contact-note">
             Area utama: BSD, Tangerang, Depok, Bogor, Jakarta, dan sekitar.
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contact-form" novalidate>
           <div class="form-field">
-            <label for="name">Nama</label>
-            <input id="name" name="name" type="text" placeholder="Nama Kakak" required>
+            <label for="contact-name">Nama</label>
+            <input id="contact-name" name="nama" type="text" placeholder="Nama Kakak" maxlength="120" required>
           </div>
           <div class="form-field">
-            <label for="city">Kota</label>
-            <input id="city" name="city" type="text" placeholder="Contoh: BSD, Depok, Bogor" required>
+            <label for="contact-city">Kota</label>
+            <input id="contact-city" name="kota" type="text" placeholder="Contoh: BSD, Depok, Bogor" maxlength="120" required>
           </div>
           <div class="form-field">
-            <label for="contact">Email atau WhatsApp</label>
-            <input id="contact" name="contact" type="text" placeholder="Nomor WA atau email aktif" required>
+            <label for="contact-contact">Email atau WhatsApp</label>
+            <input id="contact-contact" name="kontak" type="text" placeholder="Nomor WA atau email aktif" maxlength="160" required>
           </div>
           <div class="form-field">
-            <label for="message">Pesan</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tulis kebutuhan Kakak di sini" required></textarea>
+            <label for="contact-message">Pesan</label>
+            <textarea id="contact-message" name="pesan" rows="5" placeholder="Tulis kebutuhan Kakak di sini" maxlength="1000" required></textarea>
           </div>
-          <button class="btn btn-primary form-submit" type="submit">Kirim via WhatsApp</button>
+          <div class="contact-result" id="contact-result" role="status" aria-live="polite" hidden></div>
+          <button class="btn btn-primary form-submit" id="contact-submit" type="submit">Kirim ke Admin</button>
         </form>
       </div>
     </section>

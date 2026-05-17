@@ -722,10 +722,70 @@ h3 {
   box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.16);
 }
 
+.field-error {
+  color: #be123c;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.form-field.has-error input,
+.form-field.has-error textarea {
+  border-color: #fb7185;
+  box-shadow: 0 0 0 4px rgba(251, 113, 133, 0.14);
+}
+
+.contact-result {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  color: var(--text);
+  background: rgba(45, 212, 191, 0.12);
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  border-radius: var(--radius);
+}
+
+.contact-result[hidden] {
+  display: none;
+}
+
+.contact-result.error {
+  background: rgba(251, 113, 133, 0.12);
+  border-color: rgba(190, 18, 60, 0.24);
+}
+
+.contact-result p {
+  margin: 0;
+  font-weight: 800;
+}
+
+.contact-result ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #be123c;
+}
+
+.contact-result .whatsapp-followup {
+  justify-self: start;
+  min-height: 40px;
+  padding: 9px 14px;
+  color: var(--text);
+  font-weight: 850;
+  background: var(--yellow);
+  border: 2px solid var(--text);
+  border-radius: var(--radius);
+  box-shadow: 3px 3px 0 var(--text);
+}
+
 .form-submit {
   width: 100%;
   margin-top: 4px;
   border: 2px solid var(--text);
+}
+
+.form-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  transform: none;
 }
 
 .site-footer {

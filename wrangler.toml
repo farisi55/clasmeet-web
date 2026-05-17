@@ -1,0 +1,7 @@
+name = "classmate-company-profile"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB_KONTAK"
+database_name = "db_kontak"
+database_id = "d621c0a7-b9dc-4f6a-bdcc-89ff30fa88e4"
